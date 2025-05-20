@@ -1,54 +1,55 @@
 # cramming-plan
-Kế hoạch nhồi ôn thi Kì 3 năm 2
+Kế hoạch ôn thi Kì 3 năm 2
 
 ## I. Gantt Chart kế hoạch ôn thi (tham khảo)
 
 ```mermaid
 gantt
     title Kế hoạch ôn thi kì 2 năm 3
-    dateFormat DD/MM
-    axisFormat %d/%m (%a)
+    dateFormat  DD/MM
+    axisFormat  %d/%m (%a)
     todayMarker stroke-width:2px,stroke:#Crimson,opacity:0.9
+    %% tickInterval 1day
 
     section Cấu trúc dữ liệu & Giải thuật
-        Ôn lý thuyết (3 thuật toán, quy hoạch động) :active, ctdl_on, 28/05, 1d
-        stack, queue                               :active, 29/05, 1d
-        đồ thị trọng số, cây nhị phân              :active, 30/05, 1d
-        Thi thực hành (31/05)                      :crit, milestone, thi_ctdlgt, 31/05, 1d
+        Ôn lý thuyết (3 thuật toán, quy hoạch động)       :active, ctdl_on, 28/05, 1d
+        stack, queue                                      :active, 1d
+        đồ thị trọng số, cây nhị phân                     :active, 1d
+        Thi thực hành (31/05)                             :crit, milestone, thi_ctdlgt, 31/05, 1d
 
     section Lập trình web
-        ReactJS                                    :active, 21/05, 2d
-        NodeJS                                     :active, 23/05, 1d
-        ExpressJS                                  :active, 24/05, 2d
-        Storage                                    :active, 26/05, 1d
-        Nộp BTL Sân bóng                           :crit,active, 27/05, 1d
-        HTML, CSS, JS, DOM                         :active, 28/05, 1d
-        Authentication                             :active, 29/05, 2d
-        Thi thực hành (07/06)                      :crit, milestone, thi_ltw, 07/06, 1d
+        ReactJS                                           :active, 21/05, 2d
+        NodeJS                                            :active, 1d
+        ExpressJS                                         :active, 2d
+        Storage                                           :active, 1d
+        Nộp BTL Sân bóng                                  :crit,active, 1d
+        HTML, CSS, JS, DOM                                :after thi_ttcs, 1d
+        Authentication                                    :until thi_ltw
+        Thi thực hành (07/06)                             :crit,milestone, thi_ltw, 07/06, 1d
 
     section Thực tập cơ sở
         Code (Lấy từ bài LTW) -> Phân tích & thiết kế (usecase, sequence, class, erd) :active, 27/05, 1d
-        Cài đặt, chạy thử, làm báo cáo (Theo template, có hình ảnh, sơ đồ, bảng biểu) :crit,active, 28/05, 2d
-        Ôn lý thuyết, hiểu bài, cách trình bày                                         :active, 30/05, 2d
-        Nộp báo cáo & Demo (04/06)                                                     :crit, milestone, thi_ttcs, 04/06, 1d
+        Cài đặt, chạy thử, làm báo cáo (Theo template, có hình ảnh, sơ đồ, bảng biểu) :crit,active, 27/05, 1d
+        Ôn lý thuyết, hiểu bài, cách trình bày                                        :after thi_ctdlgt, until thi_ttcs
+        Nộp báo cáo ??? & Demo (04/06)                                                :crit,milestone, thi_ttcs, 04/06, 1d
 
     section An toàn thông tin
-        Ôn tập                                    :active, 08/06, 2d
-        Thi trắc nghiệm (10/06)                   :milestone, thi_attt, 10/06, 1d
+        Ôn tập                                            :attt, after thi_ltw, until thi_attt
+        Thi trắc nghiệm (10/06)                           :milestone, thi_attt, 10/06, 1d
 
     section Nhập môn AI
-        Ôn tập                                    :active, 11/06, 2d
-        Thi tự luận (13/06)                       :milestone, thi_ai, 13/06, 1d
+        Ôn tập                                            :ai, after thi_attt, until thi_ai
+        Thi tự luận (13/06)                               :milestone, thi_ai, 13/06, 1d
 
     section Công nghệ phần mềm
-        Làm và nộp BTL (tương tự TTCS)            :crit, btl_cnpm, 27/05, 1d
-        Ôn tập (UML usecase, scenario, sequence, class, erd) :active, 14/06, 3d
-        Thi tự luận (18/06)                       :crit, milestone, thi_cnpm, 18/06, 1d
+        Làm và nộp BTL (tương tự TTCS)                    :crit, btl_cnpm, 27/05, 1d
+        Ôn tập (UML usecase, scenario, sequence, class, erd) :cnpm, after thi_ai, until thi_cnpm
+        Thi tự luận (18/06)                               :crit,milestone, thi_cnpm, 18/06, 1d
 
     section CSDL phân tán
-        Ôn lý thuyết & Truy vấn                   :active, 19/06, 2d
-        Làm và nộp BTL                            :crit, btl_csdl, 21/06, 1d
-        Báo cáo & vấn đáp (22/06)                 :crit, milestone, thi_csdl, 22/06, 1d
+        Ôn lý thuyết & Truy vấn                           :after thi_cnpm, until thi_csdl
+        Làm và nộp BTL                                    :crit, btl_csdl, 27/05, 1d
+        Báo cáo & vấn đáp (22/06)                         :crit,milestone, thi_csdl, 22/06, 1d
 ```
 
 ## II. Các chủ đề cần ôn
@@ -151,9 +152,10 @@ Input:
 - Slide tiếng việt
 - Sách tham khảo tiếng anh
 
-Kiểm tra giữa kì (10%) - rồi
-Bài tập nhóm (20%) - tgian nộp
-Thi cuối kì (60%)
+Biểu điểm:
+- Kiểm tra giữa kì (10%) - rồi
+- Bài tập nhóm (20%) - tgian nộp
+- Thi cuối kì (60%)
 
 Chủ đề:
 
