@@ -11,6 +11,20 @@ gantt
     todayMarker stroke-width:2px,stroke:#Crimson,opacity:0.9
     %% tickInterval 1day
 
+    section Lịch học
+        CSDLPT : 19/05, 1d
+        CNPM : 20/05, 1d
+        ATTT : 22/05, 1d
+        LTW : 23/05, 1d
+        AI : 24/05, 1d
+
+        CSDLPT : 26/05, 1d
+        Nộp BTL CSDLPT :crit, milestone, 26/05, 1d
+        CNPM : 27/05, 1d
+        ATTT : 29/05, 1d
+        LTW : 30/05, 1d
+        AI : 31/05, 1d
+
     section Cấu trúc dữ liệu & Giải thuật
         Ôn lý thuyết (3 thuật toán, quy hoạch động)       :active, ctdl_on, 28/05, 1d
         stack, queue                                      :active, 1d
@@ -18,18 +32,18 @@ gantt
         Thi thực hành (31/05)                             :crit, milestone, thi_ctdlgt, 31/05, 1d
 
     section Lập trình web
-        ReactJS                                           :active, 21/05, 2d
+        ReactJS                                           :active, 21/05, 1d
         NodeJS                                            :active, 1d
-        ExpressJS                                         :active, 2d
+        ExpressJS                                         :active, 1d
         Storage                                           :active, 1d
-        Nộp BTL Sân bóng                                  :crit,active, 1d
+        Code xong bài Sân bóng                                  :crit, 1d
         HTML, CSS, JS, DOM                                :after thi_ttcs, 1d
         Authentication                                    :until thi_ltw
         Thi thực hành (07/06)                             :crit,milestone, thi_ltw, 07/06, 1d
 
     section Thực tập cơ sở
-        Code (Lấy từ bài LTW) -> Phân tích & thiết kế (usecase, sequence, class, erd) :active, 27/05, 1d
-        Cài đặt, chạy thử, làm báo cáo (Theo template, có hình ảnh, sơ đồ, bảng biểu) :crit,active, 27/05, 1d
+        Code (Lấy từ bài LTW) -> Phân tích & thiết kế (usecase, sequence, class, erd) :active, 25/05, 1d
+        Cài đặt, chạy thử, làm báo cáo (Theo template, có hình ảnh, sơ đồ, bảng biểu) :crit, 25/05, 1d
         Ôn lý thuyết, hiểu bài, cách trình bày                                        :after thi_ctdlgt, until thi_ttcs
         Nộp báo cáo ??? & Demo (04/06)                                                :crit,milestone, thi_ttcs, 04/06, 1d
 
@@ -42,13 +56,13 @@ gantt
         Thi tự luận (13/06)                               :milestone, thi_ai, 13/06, 1d
 
     section Công nghệ phần mềm
-        Làm và nộp BTL (tương tự TTCS)                    :crit, btl_cnpm, 27/05, 1d
+        Tổng hợp lại bài CNPM theo code Sân bóng (tương tự TTCS)                    :crit, btl_cnpm, 26/05, 1d
         Ôn tập (UML usecase, scenario, sequence, class, erd) :cnpm, after thi_ai, until thi_cnpm
         Thi tự luận (18/06)                               :crit,milestone, thi_cnpm, 18/06, 1d
 
     section CSDL phân tán
         Ôn lý thuyết & Truy vấn                           :after thi_cnpm, until thi_csdl
-        Làm và nộp BTL                                    :crit, btl_csdl, 27/05, 1d
+        Làm và nộp BTL                                    :crit, btl_csdl, 21/05, 1d
         Báo cáo & vấn đáp (22/06)                         :crit,milestone, thi_csdl, 22/06, 1d
 ```
 
