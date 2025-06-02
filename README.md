@@ -38,9 +38,10 @@ gantt
         Code xong bài Sân bóng                            :crit, 26/05, 01/06
         HTML, CSS, JS, DOM                                :active, 02/06, 3d
         ReactJS                                           :active, 02/06, 3d
+        Express + MongoDB (Mongoose)                              :active, 03/06, 3d
         Axios, Tailwind, Git (bài thu hoạch đẩy lên git) :active, 02/06, 2d
         Tự code 1 bài CRUD (react, express, sqlite, axios, tailwind) :active, 02/06, 2d
-        Code bài blog post :active, 02/06, 3d
+        Code bài LTW - photo upload :active, 02/06, 3d
         Storage, Authentication                     :active, after thi_ttcs, until thi_ltw
         Thi thực hành (07/06)                             :crit,milestone, thi_ltw, 07/06, 1d
 
@@ -160,6 +161,12 @@ Storage:
 - example: simple-blog with MongoDB
 - mongoose
 - CRUD with MongoDB
+
+phân tích yêu cầu bài LTW - photo upload (TH3 + final):
+- kiến trúc tổng quan hệ thống và công nghệ sử dụng (FE, BE, DB)
+- các thư viện sử dụng trong bài (vd kết nối BE -> DB dùng mongoose, gọi AIP từ FE -> BE dùng axios...)
+- liệt kê các nhóm chức năng, và danh sách các chức năng cụ thể (vd nhóm user, gồm list user, get user detail..; nhóm upload, gồm...)
+- sequence diagram (viết tóm tắt, ko cần vẽ cũng dc) theo MVC cho 1 vài usecase chính (vd list user, get user detail, cái nào model, cái nào view, cái nào controller...)
 
 ### 3. Cơ sở dữ liệu phân tán (22/6)
 
