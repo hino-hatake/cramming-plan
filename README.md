@@ -42,6 +42,15 @@ gantt
         Axios, Tailwind, Git (bài thu hoạch đẩy lên git) :active, 02/06, 2d
         Tự code 1 bài CRUD (react, express, sqlite, axios, tailwind) :active, 02/06, 2d
         Code bài LTW - photo upload :active, 02/06, 3d
+        Cả ngày ko làm gì, fix dc mỗi cái lỗi ko connect dc mongo do nhìn sai tên url :done, 02/06, 03/06
+        (sáng) Phân tích yêu cầu bài LTW (TH3 + final) (kiến trúc, công nghệ, thư viện, chức năng, sequence) :done, 03/06, 04/06
+        (chiều) ngủ dậy muộn, ko làm gì :done, 03/06, 04/06
+        (tối) Phân tích yêu cầu problem 1 (BE), problem 2 (FE), tự code lại BE, FE :done, 03/06, 04/06
+        (tối) STUDY.md ghi lại những cái đã học/cần học (mongo, mongoose, dbload) :done, 03/06, 04/06
+        (sáng) STUDY.md (mongo populate, async/await, promise, try/catch) :active, 04/06, 05/06
+        (sáng) code (tạo JS data object, validate 400, promise all bất đồng bộ) :active, 04/06, 05/06
+        (chiều) STUDY.md (axios, fetch API), code (fetchData.js, user + photo API, try catch lỗi) :active, 04/06, 05/06
+        (tối) đọc lại authen trong slide (stateful/stateless), làm login cho bài SLSB :active, 04/06, 05/06
         Storage, Authentication                     :active, after thi_ttcs, until thi_ltw
         Thi thực hành (07/06)                             :crit,milestone, thi_ltw, 07/06, 1d
 
